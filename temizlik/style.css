@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color:#0f182b;
+}
+p , h1, h2, h3, h4, h5{
+    user-select: none;
+}
+.menu{
+    padding-top: 50px;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.menu img{
+    margin-top: 100px;
+    width: 250px;
+}
+.menu .buyuk{
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 70%;
+    text-align: center;
+    user-select: none;
+}
+.city{
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    color: green;
+}
+.menucard{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+.menucard i{
+    font-size: 30px;
+}
+a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.main{
+    width: 70%;
+    float: right;
+    height: 250vh;
+}
+.main .afis{
+    width: 80%;
+    margin: 100px auto;
+}
+.main .afis img{
+    max-width: 100%;
+}
+.doubleText{
+    user-select: none;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 155px auto;
+}
+.real{
+    font-size: 50px;
+    font-weight: 500;
+    color: #FEC544;
+    position: relative;
+    z-index: 3;
+}
+.fake{
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: rgb(47, 55, 75);
+    position: absolute;
+}
+
+.row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.card{
+    background-color: white;
+    padding: 5px;
+    border: 1 px solid black;
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    row-gap: 20px;
+}
+.card img{
+    margin-top: 20px;
+    max-width:350px;
+}
+.name{
+    width: 70%;
+    font-size: 24px;
+    text-align: center;
+}
+.prices{
+    display: flex;
+    column-gap: 20px;
+}
+.fiyat{
+    font-size: 36px;
+}
+.eskifiyat{
+    font-size: 20px;
+    text-decoration:line-through;
+}
+.bars{
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+.bars i{
+    font-size: 36px;
+}
+.loader{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes ldio-dktaswpyuef {
+    0% {
+      top: 181.89000000000001px;
+      left: 181.89000000000001px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: -13.545px;
+      left: -13.545px;
+      width: 390.87px;
+      height: 390.87px;
+      opacity: 0;
+    }
+  }.ldio-dktaswpyuef div {
+    position: absolute;
+    border-width: 11.61px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    animation: ldio-dktaswpyuef 1.408450704225352s cubic-bezier(0,0.2,0.8,1) infinite;
+  }.ldio-dktaswpyuef div:nth-child(1) {
+    border-color: #292664;
+    animation-delay: 0s;
+  }
+  .ldio-dktaswpyuef div:nth-child(2) {
+    border-color: #667395;
+    animation-delay: -0.704225352112676s;
+  }
+  .loadingio-spinner-ripple-78uk7gww6n {
+    width: 387px;
+    height: 387px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f1f2f3;
+  }
+  .ldio-dktaswpyuef {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-dktaswpyuef div { box-sizing: content-box; }
+@media only screen and (max-width: 900px) {
+    .menu{
+        display: none;
+        transition: display 0.5s linear;
+    }
+    .main{
+        width: 100%;
+        float: right;
+    }
+    .doubleText .fake{
+        font-size: 60px;
+    }
+    .doubleText .real{
+        font-size: 24px;
+    }
+    .card{
+        row-gap: 0;
+        padding: 0;
+    }
+    .card> *{
+        scale: 0.8;
+        margin-top: 0;
+        margin: 0;
+    }
+    .bars{
+        display: flex;
+    }
+    .menu.active{
+        display: flex;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        row-gap: 20px;
+        z-index: 998;
+        transition: display 0.5s linear;
+        position: fixed;
+    }
+    .menu.active> * {
+        transform: scale(0.8);
+    }
+    
+  }
